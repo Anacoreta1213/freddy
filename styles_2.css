@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    perspective: 1000px;
+
+}
+.container{
+    margin-top: 40px;
+    width: 50%;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    transform-style: preserve-3d;
+    width: 30rem;
+    /* margin-top: 5px; */
+    min-height: 92vh;
+
+    /* background: lightcoral; */
+    box-shadow: 0 20px 20px  rgba(0, 0, 0, 0.2), 0 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 1rem 1rem;
+
+}
+
+.logo{
+    min-height: 37vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo .fondo{
+    width: 15rem;
+    height: 15rem;
+    background-color: red;
+    z-index: 1;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(
+        to bottom,
+        rgba(81, 25, 236, 0.75),
+        rgba(36, 236, 103, 0.75)
+    );
+}
+.logo img{
+    width: 15rem;
+    z-index: 4;
+    transition: all 0.5s;
+}
+.description .title{
+    padding: 1rem 0.3rem;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+.description h3{
+    font-weight: lighter;
+    color:#838282;
+    transition: all 0.5s;
+    transition: all 0.5s ease-out;
+
+
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    transition: all 0.5s ease-out;
+
+}
+.sizes button{
+    margin-top: 2rem;
+    padding: 0.5rem 1.8rem;
+    border: none;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.60);
+    border-radius: 30px;
+    cursor: pointer;
+
+
+
+}
+.sizes button.active{
+    background:#5119ecbf;
+    font-weight: bolder;
+    color: #fff;
+}
+.purchase{
+    transition: all 0.5s ease-out;
+}
+
+.purchase button{
+    margin:4rem 0 0px 0;
+    width: 100%;
+    padding: 10px;
+    background:  #0b8146bf;
+    border-radius:30px;
+    border: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.purchase button:hover{
+    background:  #08ec67bf;
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.container{
+    /* background: lightblue; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    transform-style:preserve-3d ;
+    margin: 30px;
+    min-height: 80vh;
+    width: 30rem;
+    /* background: lightgreen; */
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px  50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.logo_dark{
+    margin-top: 10px;
+    min-height: 35vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo_dark img{
+    width: 18rem;
+    z-index: 4;
+    transition: all 0.75s;
+
+}
+
+.background_dark{
+    width: 15rem;
+    height: 15rem;
+    background:linear-gradient(
+        to top,
+        rgba(93, 3, 3, 0.98),
+        rgba(0, 0, 0, 0.98)
+    );
+/* Para que se posicione delante del elemento que tiene en frente */
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info h1{
+    font: 2.5rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    transition: all 0.75s;
+
+}
+.info h3{
+    font-size: 1.1rem;
+    padding: 0rem 0rem 2rem 0rem;
+    color: rgb(93, 3, 3);
+    font-weight: lighter;
+    text-align: center;
+    transition: all 0.75s;
+
+}
+.desciption{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -12px;
+    transition: all 0.75s;
+
+}
+
+.desciption button{
+    padding: 0.5rem 1.2rem;
+    margin-left: 5px;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+    border-radius: 30px;
+    font-weight: bolder;
+    color: rgb(93, 3, 3);
+    cursor: pointer;
+    outline: none;
+
+}
+button.active{
+    background: rgb(93, 3, 3);
+    color: #fff;
+}
+
+.purchase{
+    margin: 2rem 0;
+}
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    color:#fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background:linear-gradient(
+        to top,
+        rgba(93, 3, 3, 0.98),
+        rgba(0, 0, 0, 0.98)
+    );
+    transition: background 1s;
+    transition: all 0.75s;
+}
+
+.purchase button:hover{
+    background:#000;
+
+}
